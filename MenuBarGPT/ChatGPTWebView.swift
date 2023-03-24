@@ -11,10 +11,10 @@ import WebKit
 struct ChatGPTWebView: NSViewRepresentable {
     func makeNSView(context: Context) -> WKWebView {
         let view = WebView()
-        DispatchQueue.main.async {
-            let url = URL(string: "https://chat.openai.com")!
-            view.load(URLRequest(url: url))
+        guard let openChatURL = URL(string: "https://chat.openai.com") else {
+            fatalError("URL not accessible")
         }
+        view.load(URLRequest(url: openChatURL))
         return view
     }
    
