@@ -10,8 +10,9 @@ import SwiftUI
 @main
 struct MenuBarGPTApp: App {
     var body: some Scene {
-        WindowGroup {
+        MenuBarExtra("ChatGPT", systemImage: "circles.hexagonpath.fill") {
             ContentView()
         }
+        .menuBarExtraStyle(.window)
     }
 }
