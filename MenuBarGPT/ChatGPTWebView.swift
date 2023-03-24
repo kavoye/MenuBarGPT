@@ -9,16 +9,28 @@ import SwiftUI
 import WebKit
 
 struct ChatGPTWebView: NSViewRepresentable {
+    let view = WebView()
+    
+    init() {
+        reloadPage(every: 3600)
+    }
+    
     func makeNSView(context: Context) -> WKWebView {
-        let view = WebView()
-        guard let openChatURL = URL(string: "https://chat.openai.com") else {
-            fatalError("URL not accessible")
-        }
-        view.load(URLRequest(url: openChatURL))
+        let chatURL = URL(string: "https://chat.openai.com")!
+        view.load(URLRequest(url: chatURL))
+
         return view
     }
    
     func updateNSView(_ uiView: WKWebView, context: Context) {}
+    
+    
+    /// Reload WebView once in an hour to refresh session.
+    func reloadPage(every seconds: TimeInterval) {
+        Timer.scheduledTimer(withTimeInterval: seconds, repeats: true) { _ in
+            view.reload()
+        }
+    }
  
 }
 
