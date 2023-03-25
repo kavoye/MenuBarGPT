@@ -7,21 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		EE2F55A129CCDB2800BFFE9A /* MenuBarGPTApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE2F55A029CCDB2800BFFE9A /* MenuBarGPTApp.swift */; };
+		EE2F55A129CCDB2800BFFE9A /* MenuBarApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE2F55A029CCDB2800BFFE9A /* MenuBarApp.swift */; };
 		EE2F55A329CCDB2800BFFE9A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE2F55A229CCDB2800BFFE9A /* ContentView.swift */; };
 		EE2F55A529CCDB2900BFFE9A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EE2F55A429CCDB2900BFFE9A /* Assets.xcassets */; };
 		EE2F55A829CCDB2900BFFE9A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EE2F55A729CCDB2900BFFE9A /* Preview Assets.xcassets */; };
-		EEED4D6629CCEC0D00A6B9D8 /* ChatGPTWebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEED4D6529CCEC0D00A6B9D8 /* ChatGPTWebView.swift */; };
+		EEED4D6629CCEC0D00A6B9D8 /* ChatWebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEED4D6529CCEC0D00A6B9D8 /* ChatWebView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		EE2F559D29CCDB2800BFFE9A /* MenuBarGPT.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MenuBarGPT.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		EE2F55A029CCDB2800BFFE9A /* MenuBarGPTApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuBarGPTApp.swift; sourceTree = "<group>"; };
+		EE2F55A029CCDB2800BFFE9A /* MenuBarApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuBarApp.swift; sourceTree = "<group>"; };
 		EE2F55A229CCDB2800BFFE9A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		EE2F55A429CCDB2900BFFE9A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EE2F55A729CCDB2900BFFE9A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		EE2F55A929CCDB2900BFFE9A /* MenuBarGPT.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MenuBarGPT.entitlements; sourceTree = "<group>"; };
-		EEED4D6529CCEC0D00A6B9D8 /* ChatGPTWebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatGPTWebView.swift; sourceTree = "<group>"; };
+		EEED4D6529CCEC0D00A6B9D8 /* ChatWebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatWebView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,9 +54,9 @@
 		EE2F559F29CCDB2800BFFE9A /* MenuBarGPT */ = {
 			isa = PBXGroup;
 			children = (
-				EE2F55A029CCDB2800BFFE9A /* MenuBarGPTApp.swift */,
+				EE2F55A029CCDB2800BFFE9A /* MenuBarApp.swift */,
 				EE2F55A229CCDB2800BFFE9A /* ContentView.swift */,
-				EEED4D6529CCEC0D00A6B9D8 /* ChatGPTWebView.swift */,
+				EEED4D6529CCEC0D00A6B9D8 /* ChatWebView.swift */,
 				EE2F55A429CCDB2900BFFE9A /* Assets.xcassets */,
 				EE2F55A929CCDB2900BFFE9A /* MenuBarGPT.entitlements */,
 				EE2F55A629CCDB2900BFFE9A /* Preview Content */,
@@ -143,8 +143,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				EE2F55A329CCDB2800BFFE9A /* ContentView.swift in Sources */,
-				EEED4D6629CCEC0D00A6B9D8 /* ChatGPTWebView.swift in Sources */,
-				EE2F55A129CCDB2800BFFE9A /* MenuBarGPTApp.swift in Sources */,
+				EEED4D6629CCEC0D00A6B9D8 /* ChatWebView.swift in Sources */,
+				EE2F55A129CCDB2800BFFE9A /* MenuBarApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

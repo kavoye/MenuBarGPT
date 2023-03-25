@@ -9,7 +9,12 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        ChatGPTWebView()
-            .frame(width: 600, height: 800)
+        ZStack(alignment: .topTrailing) {
+            ChatWebView()
+                .frame(width: 600, height: 800)
+            
+            Button("Quit") { exit(0) }
+                .offset(x: -60, y: 13)
+        }
     }
 }
