@@ -13,8 +13,12 @@ struct ContentView: View {
             ChatWebView()
                 .frame(width: 600, height: 800)
             
-            Button("Quit") { exit(0) }
-                .offset(x: -60, y: 13)
+            Menu("Menu") {
+                Button("Settings") { }
+                Button("Quit") { exit(0) }
+            }
+            .fixedSize()
+            .offset(x: -60, y: 13)
         }
     }
 }
