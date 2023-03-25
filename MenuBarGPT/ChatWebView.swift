@@ -16,7 +16,7 @@ struct ChatWebView: NSViewRepresentable {
         view.load(URLRequest(url: chatURL))
         
         /// Reload WebView once in an hour to refresh session.
-        let timer = Timer.scheduledTimer(withTimeInterval: 3600, repeats: true) { _ in
+        Timer.scheduledTimer(withTimeInterval: 3600, repeats: true) { _ in
             view.reload()
         }
 
