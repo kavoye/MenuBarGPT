@@ -26,14 +26,3 @@ struct ChatWebView: NSViewRepresentable {
     func updateNSView(_ uiView: WKWebView, context: Context) {}
  
 }
-
-
-class WebView: WKWebView {
-    override func willOpenMenu(_ menu: NSMenu, with event: NSEvent) {
-        menu.addItem(withTitle: "Quit", action: #selector(exitApp), keyEquivalent: "")
-    }
-    
-    @objc func exitApp() {
-        exit(0)
-    }
-}
