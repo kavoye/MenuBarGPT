@@ -11,6 +11,7 @@
 		EE2F55A329CCDB2800BFFE9A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE2F55A229CCDB2800BFFE9A /* ContentView.swift */; };
 		EE2F55A529CCDB2900BFFE9A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EE2F55A429CCDB2900BFFE9A /* Assets.xcassets */; };
 		EE2F55A829CCDB2900BFFE9A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EE2F55A729CCDB2900BFFE9A /* Preview Assets.xcassets */; };
+		EE59CF4E29D4C54C00FCABB8 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE59CF4D29D4C54C00FCABB8 /* SettingsView.swift */; };
 		EEED4D6629CCEC0D00A6B9D8 /* ChatWebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEED4D6529CCEC0D00A6B9D8 /* ChatWebView.swift */; };
 /* End PBXBuildFile section */
 
@@ -21,6 +22,7 @@
 		EE2F55A429CCDB2900BFFE9A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EE2F55A729CCDB2900BFFE9A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		EE2F55A929CCDB2900BFFE9A /* MenuBarGPT.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MenuBarGPT.entitlements; sourceTree = "<group>"; };
+		EE59CF4D29D4C54C00FCABB8 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		EEED4D6529CCEC0D00A6B9D8 /* ChatWebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatWebView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -56,6 +58,7 @@
 			children = (
 				EE2F55A029CCDB2800BFFE9A /* MenuBarApp.swift */,
 				EE2F55A229CCDB2800BFFE9A /* ContentView.swift */,
+				EE59CF4D29D4C54C00FCABB8 /* SettingsView.swift */,
 				EEED4D6529CCEC0D00A6B9D8 /* ChatWebView.swift */,
 				EE2F55A429CCDB2900BFFE9A /* Assets.xcassets */,
 				EE2F55A929CCDB2900BFFE9A /* MenuBarGPT.entitlements */,
@@ -143,6 +146,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EE2F55A329CCDB2800BFFE9A /* ContentView.swift in Sources */,
+				EE59CF4E29D4C54C00FCABB8 /* SettingsView.swift in Sources */,
 				EEED4D6629CCEC0D00A6B9D8 /* ChatWebView.swift in Sources */,
 				EE2F55A129CCDB2800BFFE9A /* MenuBarApp.swift in Sources */,
 			);

@@ -8,17 +8,28 @@
 import SwiftUI
 
 struct ContentView: View {
+    @AppStorage("webViewHeight") var webViewHeight: Double = 650
+    @AppStorage("webViewWidth") var webViewWidth: Double = 480
+    
     var body: some View {
         ZStack(alignment: .topTrailing) {
             ChatWebView()
-                .frame(width: 600, height: 800)
+                .frame(width: webViewWidth, height: webViewHeight)
             
             Menu("Menu") {
-                Button("Settings") { }
+                Button("Settings") {
+                    NSApp.sendAction(Selector(("showSettingsWindow:")), to: nil, from: nil)
+                    for window in NSApplication.shared.windows {
+                        window.level = .floating
+                    }
+                }
+                
                 Button("Quit") { exit(0) }
             }
+            .menuStyle(.borderlessButton)
+            .menuIndicator(.hidden)
             .fixedSize()
-            .offset(x: -60, y: 13)
+            .offset(x: -60, y: 14)
         }
     }
 }
