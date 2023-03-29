@@ -9,7 +9,7 @@ import SwiftUI
 import WebKit
 
 struct ChatWebView: NSViewRepresentable {
-    let view = WebView()
+    let view = WKWebView()
 
     func makeNSView(context: Context) -> WKWebView {
         let chatURL = URL(string: "https://chat.openai.com")!
