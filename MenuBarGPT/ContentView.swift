@@ -20,7 +20,7 @@ struct ContentView: View {
                 Button("Settings") {
                     NSApp.sendAction(Selector(("showSettingsWindow:")), to: nil, from: nil)
                     for window in NSApplication.shared.windows {
-                        window.level = .floating
+                        window.level = .popUpMenu
                     }
                 }
                 
