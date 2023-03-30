@@ -16,20 +16,24 @@ struct ContentView: View {
             ChatWebView()
                 .frame(width: webViewWidth, height: webViewHeight)
             
-            Menu("Menu") {
+            Menu {
                 Button("Settings") {
                     NSApp.sendAction(Selector(("showSettingsWindow:")), to: nil, from: nil)
                     for window in NSApplication.shared.windows {
-                        window.level = .floating
+                        window.level = .popUpMenu
                     }
                 }
                 
                 Button("Quit") { exit(0) }
+            } label: {
+                Text("Menu")
+                    .foregroundColor(.white.opacity(0.85))
+                    .font(.system(size: 14.5))
             }
             .menuStyle(.borderlessButton)
             .menuIndicator(.hidden)
+            .offset(x: -60, y: 15)
             .fixedSize()
-            .offset(x: -60, y: 14)
         }
     }
 }
