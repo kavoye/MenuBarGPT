@@ -1,4 +1,4 @@
 # MenuBarGPT
 ChatGPT application that can be accessed from macOS menu bar
 
-![Screenshot](images/app.png)
+![Screenshot](images/app_medium.png)
